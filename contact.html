@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Alexander Laffer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500&display=swap" rel="stylesheet">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 20px); /* Adjust the width to include padding */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+        }
+        .contact-form button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .contact-form button:hover {
+            background-color: #ff8b19;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="name">
+            <h1><a href="index.html"><span>Alexander Laffer</span></a></h1>
+        </div>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="creative.html">Creative</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="maincontent" class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="mailto:drlafferai@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <footer>
+        <div id="followme">
+            <div id="twitter">
+                <a href="https://twitter.com/exlaffer?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @exlaffer</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/exlaffer/">
+                    <img src="LinkedIn-Blue-21@2x.png" alt="Alexander Laffer LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

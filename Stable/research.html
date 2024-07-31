@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research - Alexander Laffer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500&display=swap" rel="stylesheet">
+    <style>
+        .more-content { display: none; }
+        .show-more-btn {
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-align: center;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .video-container, .image-container {
+            display: inline-block;
+            vertical-align: top;
+            width: 48%;
+        }
+        .image-container img {
+            cursor: pointer;
+            width: auto;
+            height: 315px; /* Match the YouTube video height */
+        }
+        .view-poster-btn {
+            display: none; /* Hide the button by default */
+        }
+        .image-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .image-modal-content {
+            margin: 5% auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+        .image-modal-content img {
+            width: 100%;
+            height: auto;
+        }
+        .image-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .video-container, .image-container {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .image-container img {
+                display: none; /* Hide the image */
+            }
+            .image-container .view-poster-btn {
+                display: inline-block; /* Show the button */
+                cursor: pointer;
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 25px;
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="name">
+            <h1><span>Alexander Laffer</span></h1>
+        </div>
+    </div>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="creative.html">Creative</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="maincontent" class="container">
+        <h2>Research Projects</h2>
+        <div class="projects-section">
+            <p><strong>Current Project:</strong> <a href="https://automatingempathy.ai/" target="_blank">Automated Empathy – Globalising International Standards (AEGIS)</a> (Supported by RAI UK/UKRI)</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/F2VbJ-4w2SA?si=BoOjX3JV_ZL8zz1f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="image-container">
+                <img src="AEGIS NII Open Day Poster.png" alt="AEGIS Poster" id="imageModalTrigger">
+                <button class="view-poster-btn" id="viewPosterButton">View Project Poster</button>
+            </div>
+            <div class="image-modal" id="imageModal">
+                <span class="image-modal-close" id="imageModalClose">&times;</span>
+                <div class="image-modal-content">
+                    <img src="AEGIS NII Open Day Poster.png" alt="AEGIS Poster">
+                </div>
+            </div>
+            <p>Critically Envisioning Biometric AI Futures, The University of Edinburgh and UKRI Trustworthy Autonomous Systems Hub (Supported by UKRI).</p>
+            <p>Artificial Intelligence (AI), Ethics & Policing in North Wales: Establishing Citizens’ Perspectives, Bangor University. (Supported by BU Impact Accelerator)</p>
+            <p><a href="https://emotionalai.org/ukjapan" target="_blank">Emotional AI in Cities: Cross Cultural Lessons from UK and Japan on Designing for An Ethical Life</a>, Bangor University. (Supported by the Economic and Social Research Council, ES/T00696X/1, in conjunction with the Japan Science and Technology fund)</p>
+            <div class="more-content">
+                <p><a href="https://public-engagement.librariesconnected.org.uk/case-studies/asset-based-storytelling" target="_blank">Asset-based Storytelling in Kingston</a>, Kingston University and Kingston Libraries. (Supported by Arts Council England)</p>
+                <p><a href="https://research.bangor.ac.uk/portal/en/researchprojects/taking-back-control-of-our-personal-data(24d3db17-caaf-4d1d-a94e-eaa59c82cc18).html" target="_blank">Taking Back Control of Our Personal Data: An ethical impact assessment of personal data storage apps</a>, Bangor University. (Supported by Innovate UK)</p>
+                <p><a href="https://www.open.ac.uk/researchprojects/livingwithuncertainty/" target="_blank">Living with Uncertainty</a>, The Open University. (Supported by the Economic and Social Research Council)</p>
+            </div>
+            <p class="show-more-btn">Show More</p>
+        </div>
+
+        <h2>Publications</h2>
+        <div class="publications-section">
+            <p>Bakir, V., Laffer, A., McStay, D., Miranda, D., & Urquhart, L. (2024). On manipulation by emotional AI: UK adults’ views and governance implications. <i>Frontiers in Sociology, Sec. Sociology of Emotion, 9</i>. <a href="https://doi.org/10.3389/fsoc.2024.1339834" target="_blank">https://doi.org/10.3389/fsoc.2024.1339834</a></p>
+            <p>Bakir, V., Laffer, A., & McStay, A. (forthcoming). Combatting the digital influence industry within surveillance capitalism: The potentials and pitfalls of personal information management systems. In E. L. Briant & V. Bakir (Eds.), <i>Routledge handbook of the influence industry</i>. Routledge.</p>
+            <p>Bakir, V., Laffer, A., & McStay, A. (2023). Blurring the moral limits of data markets: Biometrics, emotion and data dividends. <i>AI & Society</i>. <a href="https://doi.org/10.1007/s00146-023-01739-5" target="_blank">https://doi.org/10.1007/s00146-023-01739-5</a></p>
+            <p>Bakir, V., Laffer, A., & McStay, A. (2023). Human-first, please: Assessing citizen views and industrial ambition for emotional AI in recommender systems. <i>Surveillance & Society, 21</i>(2), 205-222. <a href="https://ojs.library.queensu.ca/index.php/surveillance-and-society/index" target="_blank">https://ojs.library.queensu.ca/index.php/surveillance-and-society/index</a></p>
+            <div class="more-content">
+                <p>Laffer, A. (2023). Using citizen focus groups to examine attitudes towards emotional AI: Design, diversity and ethics [Video]. <i>SAGE Research Methods</i>. <a href="https://doi.org/10.4135/9781529627848" target="_blank">https://doi.org/10.4135/9781529627848</a></p>
+                <p>Laffer, A. (2022). Using an online narrative approach to explore diverse participants' understanding of emerging technology: Citizen’s perspectives on living with emotional AI. <i>SAGE Research Methods: Doing Online Research</i>. <a href="https://dx.doi.org/10.4135/9781529604122" target="_blank">https://dx.doi.org/10.4135/9781529604122</a></p>
+                <p>Bakir, V., Ghotbi, N., Ho, T. M., Laffer, A., Mantello, P., McStay, A., Miranda, D., Miyashita, H., Podoletz, L., Tanaka, H., & Urquhart, L. (2022). Emotional AI in cities: Cross-cultural lessons from the UK and Japan on designing for an ethical life. In <i>Machine learning and the city: Applications in architecture and urban design</i> (pp. 621–624). John Wiley & Sons, Ltd. <a href="https://doi.org/10.1002/9781119815075.ch51" target="_blank">https://doi.org/10.1002/9781119815075.ch51</a></p>
+                <p>Urquhart, L., Laffer, A., & Miranda, D. (2022). Working with affective computing: Exploring UK public perceptions of AI enabled workplace surveillance. In <i>Proceedings of Ethicomp 2022</i>, University of Turku. Pp. 164-177. (ISBN 978-951-29-8989-8)</p>
+                <p>Laffer, A. (2021). When readers talk about characters as if they were real, how do they talk about them? Empathy and gossip in reading group discourse. <i>Poetics, 85</i>(101503), 1-21. <a href="https://doi.org/10.1016/j.poetic.2020.101503" target="_blank">https://doi.org/10.1016/j.poetic.2020.101503</a></p>
+                <p>Laffer, A. (2021). (Im/E)Migration: A Critical making Project. <i>The Digital Review, 1</i>. <a href="https://doi.org/10.7273/82k7-cc75" target="_blank">https://doi.org/10.7273/82k7-cc75</a></p>
+            </div>
+            <p class="show-more-btn">Show More</p>
+        </div>
+
+        <h2>Project Outputs</h2>
+        <div class="outputs-section">
+            <p>Laffer, A. (2023). Critical biometric and AI futures: Twine narratives for citizen workshops. <a href="https://biometricai.neocities.org/" target="_blank">https://biometricai.neocities.org/</a></p>
+            <p>Laffer, A., & Chatzichristodoulou, M. (2023). A community storytelling toolkit. Kingston University.</p>
+            <p>Laffer, A. (2022). Attitudes towards emotional artificial intelligence use: Transcripts of citizen workshops collected using an innovative narrative approach, 2021. [Data collection]. UK Data Service. <a href="http://doi.org/10.5255/UKDA-SN-855688" target="_blank">http://doi.org/10.5255/UKDA-SN-855688</a></p>
+            <p>Laffer, A. (2021). Emotional AI in cities: A Twine narrative for citizen workshops. <a href="https://eaitwine.neocities.org/" target="_blank">https://eaitwine.neocities.org/</a></p>
+            <div class="more-content">
+                <p>Bakir, V., McStay, A., & Laffer, A. (2021). UK attitudes towards personal data stores and control over personal data, 2021. [Data collection]. UK Data Service. <a href="http://doi.org/10.5255/UKDA-SN-855178" target="_blank">http://doi.org/10.5255/UKDA-SN-855178</a></p>
+                <p>Cameron, L., & Weatherbed, S. (2014). Empathy dynamics in conflict transformation: A manual. (As contributor)</p>
+            </div>
+            <p class="show-more-btn">Show More</p>
+        </div>
+
+        <h2>Doctoral Thesis</h2>
+        <div class="thesis-section">
+            <p>Laffer, A. (2016). <i>A poetics of empathy: Discussion of migrants in and around a work of fiction</i>. The Open University.</p>
+        </div>
+
+        <h2>Research Reports</h2>
+        <div class="reports-section">
+            <p><a href="https://www.pure.ed.ac.uk/ws/portalfiles/portal/378961471/UrquhartEtal2023CriticallyEnvisioningBiometricArtificialIntelligence.pdf" target="_blank">Urquhart, L., Miranda, D., Connon, I., & Laffer, A. (2023). Critically envisioning biometric artificial intelligence in law enforcement</a>. The University of Edinburgh.</p>
+            <p>Laffer, A., & Chatzichristodoulou, M. (2023). Evaluating asset-based storytelling in Kingston. Kingston University.</p>
+            <p>Bakir, V., Laffer, A., & McStay, A. (2021). Taking back control of our personal data: An ethical impact assessment of personal data storage apps. Bangor University.</p>
+            <p>Laffer, A., & Anderson, C. (2021). Discourses of lockdown: A qualitative analysis and comparison of media coverage of Lockdown 2 and 3. DHA Communications, Liverpool.</p>
+            <div class="more-content">
+                <p>Laffer, A. (2018). A space for all: A mixed-methods research project into commercial foyer users. Southbank Centre, London.</p>
+                <p>Laffer, A. (2017). ‘My Southbank Centre’: A qualitative research project into visitor awareness and impact. Southbank Centre, London.</p>
+            </div>
+            <p class="show-more-btn">Show More</p>
+        </div>
+
+        <h2>Conference Papers</h2>
+        <div class="papers-section">
+            <p>Andres, F., Bakir, V., Bland, B., Laffer, A., Li, P., Miranda, D., McStay, A., & Urquhart, L. (2024). How to live well with emotional AI and empathetic technologies. <i>NII Open House</i>. National Institute of Informatics, Tokyo, Japan. <a href="https://doi.org/10.13140/RG.2.2.29708.73604" target="_blank">https://doi.org/10.13140/RG.2.2.29708.73604</a></p>
+            <p>Laffer, A., & Chatzichristodoulou, M. (2023). ‘Storytelling is a little cove, where the waves don’t buffet you’: Agency, integration, and empathy in a community storytelling project. <i>Describing Exclusion, Writing Inclusion in the 21st Century</i>. IETT - Jean Moulin Lyon 3 University, Lyon, France.</p>
+            <p>Chatzichristodoulou, M., Laffer, A., Neville, R., & Tarn, F. (2023). (Panel) Distributed leadership in a community storytelling project. <i>The Power of Collaborative Action III: Leading the Future of Cultural Knowledge Exchange</i>. National Centre for Academic and Cultural Exchange.</p>
+            <p>Laffer, A. (2021). New ways of writing: Affordances of digital technology. <i>Questioning the Givens of Academic Writing</i>. Oxford Brookes University.</p>
+            <div class="more-content">
+                <p>Laffer, A. (2019). Representations of migration in The Boat and The Boat: Affordances for empathy across print and digital fiction. <i>Stylistics without Borders: Poetics and Linguistics Association</i>. University of Liverpool.</p>
+                <p>Laffer, A. (2016). Taking a triangular approach to literary study: Incorporating data from author, text and reader. <i>Style and Response: Minds, Media, Methods</i>. Sheffield Hallam University.</p>
+                <p>Laffer, A. (2013). Conflicted positioning: How readers discuss a fictional asylum seeker. <i>Reading in Conflict</i>. The Open University.</p>
+                <p>Laffer, A. (2012). ‘Clear blue water’ between the author and reader: Can metaphor use be considered deliberate in the production of literature? <i>Poetics and Linguistics Association</i>. University of Malta.</p>
+                <p>Laffer, A. (2012). ‘I wish I was a British pound coin’: Metaphoric and non-metaphoric interaction in The Other Hand. <i>Researching and Applying Metaphor International Association</i>. Lancaster University.</p>
+                <p>Laffer, A. (2011). The poetics of empathy. <i>Reading Mediated Minds, CCCT Summer School</i>. University of Amsterdam.</p>
+                <p>Laffer, A. (2011). Metaphor as a marker of empathy in The Other Hand: Emotion, identification and beyond. <i>Empathy in the Verbal and Visual Arts</i>. The Open University. [Conference organizer and host]</p>
+                <p>Laffer, A. (2011). On The Other Hand: Software derived analysis versus manual identification. <i>Researching and Applying Metaphor International Association</i>. Almagro.</p>
+                <p>Laffer, A. (2011). Empathy in reading groups: How the reader engages with the text, fictional characters and other readers. <i>Literary Reading: Research Seminar</i>. The Open University.</p>
+                <p>Laffer, A. (2010). The poetics of empathy: How popular fiction can influence attitudes across social group differences. <i>Poetics and Linguistics Association</i>. University of Genoa.</p>
+                <p>Laffer, A. (2010). Empathy in reading groups: How readers relate to fictional characters. <i>The Arts and Their Audiences: Interdisciplinary Symposium</i>. The Open University.</p>
+            </div>
+            <p class="show-more-btn">Show More</p>
+        </div>
+    </div>
+    <footer>
+        <div id="followme">
+            <div id="twitter">
+                <a href="https://twitter.com/exlaffer?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @exlaffer</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/exlaffer/">
+                    <img src="LinkedIn-Blue-21@2x.png" alt="Alexander Laffer LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".show-more-btn").forEach(function(button) {
+                button.addEventListener("click", function() {
+                    const moreContent = button.previousElementSibling;
+                    moreContent.classList.toggle("more-content");
+                    button.textContent = moreContent.classList.contains("more-content") ? "Show More" : "Show Less";
+                });
+            });
+
+            const imageModal = document.getElementById("imageModal");
+            const imageModalTrigger = document.getElementById("imageModalTrigger");
+            const imageModalClose = document.getElementById("imageModalClose");
+            const viewPosterButton = document.getElementById("viewPosterButton");
+
+            imageModalTrigger.addEventListener("click", function() {
+                imageModal.style.display = "block";
+            });
+
+            imageModalClose.addEventListener("click", function() {
+                imageModal.style.display = "none";
+            });
+
+            viewPosterButton.addEventListener("click", function() {
+                imageModal.style.display = "block";
+            });
+
+            window.addEventListener("click", function(event) {
+                if (event.target == imageModal) {
+                    imageModal.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
