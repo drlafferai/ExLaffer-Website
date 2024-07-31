@@ -13,19 +13,19 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-            width: 75vw; /* Ensures the grid spans at least 75% of the visible screen */
+            width: 75vw;
             margin: 0 auto;
         }
-        .image-grid .image-container {
+        .image-container {
             position: relative;
         }
-        .image-grid img {
+        .image-container img {
             width: 100%;
             height: auto;
-            border-radius: 15px; /* Rounded edges */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual effect */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .image-grid .hover-image {
+        .hover-image {
             position: absolute;
             top: 0;
             left: 0;
@@ -35,7 +35,26 @@
             transition: opacity 0.3s ease;
             border-radius: 15px;
         }
-        .image-grid .image-container:hover .hover-image {
+        .image-container:hover .hover-image {
+            opacity: 1;
+        }
+        .image-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            color: #ff8b19;
+            padding: 10px 20px;
+            border-radius: 25px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .image-container:hover .image-overlay {
             opacity: 1;
         }
     </style>
@@ -84,8 +103,11 @@
                 <img src="CL6.png" class="hover-image" alt="Creative Image 6 Original">
             </div>
             <div class="image-container">
-                <img src="HL7.png" alt="Creative Image 7">
-                <img src="Cl7.png" class="hover-image" alt="Creative Image 7 Original">
+                <a href="collabca.html">
+                    <img src="HL7.png" alt="Creative Image 7">
+                    <img src="Cl7.png" class="hover-image" alt="Creative Image 7 Original">
+                    <div class="image-overlay">Music/Poetry<br>X<br>Charlie Laffer</div>
+                </a>
             </div>
             <div class="image-container">
                 <img src="HL8.png" alt="Creative Image 8">
