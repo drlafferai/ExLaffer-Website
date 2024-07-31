@@ -181,3 +181,48 @@ a {
     max-height: calc((200px + 20px) * 2); /* Adjust 200px to the image height and 20px to the gap size */
     overflow: hidden;
 }
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+    #header {
+        height: auto; /* Adjust height to auto for mobile view */
+        background-attachment: scroll;
+    }
+
+    p, li {
+        font-size: 18px; /* Reduce font size for mobile view */
+    }
+
+    /* Research page specific styles */
+    .video-container, .image-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-container img {
+        width: 100%; /* Ensure image fits within the mobile view */
+    }
+
+    .image-overlay {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 16px; /* Adjust font size for mobile view */
+    }
+}
+
+/* Creative page specific styles */
+@media screen and (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Stack images in a single column */
+    }
+
+    .image-overlay {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 16px; /* Adjust font size for mobile view */
+    }
+}
